@@ -1,0 +1,91 @@
+@import url('./basics.css');
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    gap: 50px;
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: 5;
+}
+
+.topbar > .logo-container{
+    margin-left: var(--tl-m-margin-left);
+    padding-right: 50px;
+    border-right: solid 2px #0001;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.topbar > .logo-container > img{
+    height: 45%;
+}
+
+.topbar > .menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-weight: 500;
+}
+
+.topbar > .right-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topbar .rate-container{
+    display: grid;
+    place-items: center;
+    width: 173px
+}
+
+.topbar .rate{
+    border: 2px #fff5 solid;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.order-link{
+    display: grid;
+    place-items: center;
+    width: 333px;
+    font-weight: 500;
+}
+
+.order-link::after {
+    content: "";
+    height: 2px;
+    width: 80%;
+    background-color: var(--tl-c-accent);
+}
+
+.topbar .rate::after{
+    content: "3";
+    position: absolute;
+    inset: -5px -5px auto auto;
+    background-color: #c2b6a6;
+    padding: 5px;
+    color: #fff;
+}
+
+.topbar .rate > img {
+    height: 25px;
+    z-index: 2;
+    position: absolute;
+}
+
+.hero-content{
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: 1fr;
+    min-height: 100vh;
+}

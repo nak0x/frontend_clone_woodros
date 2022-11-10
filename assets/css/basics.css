@@ -1,0 +1,49 @@
+/* Credits Théo Lesage - All right reserved */
+
+@font-face {
+    font-family: Lovelace;
+    src: url('../fonts/Lovelace\ Text\ Regular.otf') format("opentype");
+}
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: var(--tl-f-corp);
+    color: var(--tl-c-dark);
+}
+
+:root{
+
+    /* Colors */
+    --tl-c-main: #dedee0;
+    --tl-c-main-bis: #C0C0C1;
+    --tl-c-blur: #ECBA89;
+    --tl-c-dark: #2E2E2E;
+    --tl-c-accent: #B7875E;
+
+    /* Fonts */
+    --tl-f-heading: Lovelace, serif;
+    --tl-f-corp: proxima-nova, sans-serif;
+
+    /* Mesures */
+    --tl-m-margin-left: 150px;
+}
+
+body{
+    background-color: var(--tl-c-main);
+    background-image: url("../../images/background.jpg");
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+a {
+    color: var(--tl-c-dark);
+    text-decoration: none;
+}
