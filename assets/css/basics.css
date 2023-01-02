@@ -1,10 +1,12 @@
 /* Credits Théo Lesage - All right reserved */
 
+/* Fonts imports */
 @font-face {
     font-family: Lovelace;
     src: url('../fonts/Lovelace\ Text\ Regular.otf') format("opentype");
 }
 
+/* CSS Clean */
 *, ::after, ::before{
     margin: 0;
     padding: 0;
@@ -14,23 +16,31 @@
     color: var(--tl-c-dark);
 }
 
+a {
+    color: var(--tl-c-dark);
+    text-decoration: none;
+}
+
+/* Vars defs */
 :root{
 
     /* Colors */
-    --tl-c-main: #dedee0;
+    --tl-c-white: #fefefe;
+    --tl-c-main: #efeef3;
     --tl-c-main-bis: #C0C0C1;
     --tl-c-blur: #ECBA89;
     --tl-c-dark: #2E2E2E;
-    --tl-c-accent: #B7875E;
+    --tl-c-accent: #edbb80;
 
     /* Fonts */
-    --tl-f-heading: Lovelace, serif;
+    --tl-f-heading: "Lovelace", Arial, Helvetica, sans-serif;
     --tl-f-corp: proxima-nova, sans-serif;
 
     /* Mesures */
-    --tl-m-margin-left: 150px;
+    --tl-m-margin-left: 190px;
 }
 
+/* Base body styling */
 body{
     background-color: var(--tl-c-main);
     background-image: url("../../images/background.jpg");
@@ -43,7 +53,12 @@ body{
     position: relative;
 }
 
-a {
-    color: var(--tl-c-dark);
-    text-decoration: none;
+::selection{
+    background-color: var(--tl-c-dark);
+    color: var(--tl-c-accent);
+    -webkit-text-stroke-color: var(--tl-c-accent);
+}
+
+/*{
+    background-color: #0f02 !important;
 }
