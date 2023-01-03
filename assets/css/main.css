@@ -517,7 +517,7 @@ place-items: center;
     position: relative;
     width: min(100%, 1920px);
     margin-top: 7rem;
-    height: 125vh;
+    height: 150vh;
 }
 
 .product-category-title {
@@ -586,7 +586,7 @@ place-items: center;
 }
 
 .equi-row > .category-container {
-    height: 53vh;
+    height: 63vh;
 }
 
 .free-content-placing-row{
