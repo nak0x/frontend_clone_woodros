@@ -10,4 +10,3 @@ https://www.behance.net/gallery/112190665/Woodros-Website?tracking_source=projec
 #### Tech used:
 - html
 - css
-- js
